@@ -71,15 +71,13 @@ export default function LoginPage() {
                 'token',
                 data.token
             );
-
+            
             localStorage.setItem(
                 'role',
                 data.role
             );
-
-            router.push('/');
-
-            router.refresh();
+            
+            window.location.href = '/';
 
         } catch (error) {
 
